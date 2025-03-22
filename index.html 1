@@ -34,9 +34,9 @@
 <body>
 
     <div class="container">
-        <h1>Dear Didi, 🚍💖</h1>
+        <h1>Dear [Sweety didi], 🚍💖</h1>
         <p>Hold on... a special message is arriving! ⏳</p>
-        <p class="message" id="specialMsg">You are not just my sister;  
+        <p class="message" id="specialMsg">[Sweety didi], you are not just my sister;  
         you are my mentor, my inspiration, and my best friend.  
         Thank you for being the guiding light in my life. ❤️</p>
     </div>
