@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Message for You ❤️</title>
+    <title>Special Message for Somya Sir 💻</title>
     <style>
         body {
             text-align: center;
@@ -69,6 +69,23 @@
             0% { left: -200px; }
             100% { left: 100%; }
         }
+
+        /* Letter */
+        .letter {
+            font-size: 25px;
+            background: #ffcccb;
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            cursor: pointer;
+            margin-top: 50px;
+        }
+
+        /* Hidden Message */
+        #messageBox {
+            display: none;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -81,17 +98,24 @@
         <div class="wheel wheel2"></div>
     </div>
 
+    <div class="letter" id="openLetter">📩 Click to Open Letter</div>
+
     <div class="container" id="messageBox">
-        <h1>Dear Sister ❤️</h1>
-        <p>You are not just my sister;  
-        you are my best friend, my biggest support, and my guiding light.  
-        Thank you for always being there for me. Love you! ❤️</p>
+        <h1>Dear Somya Sir 💻</h1>
+        <p>You are not just a teacher, you are a true guide and mentor.  
+        Your knowledge and wisdom inspire me every day.  
+        Thank you for always supporting and motivating me. 🙏💖</p>
     </div>
 
     <script>
         setTimeout(function() {
-            document.getElementById("messageBox").style.opacity = "1";
-        }, 4000); // Message appears after bus exits the screen
+            document.getElementById("openLetter").style.opacity = "1";
+        }, 4000); // Letter appears after bus exits the screen
+
+        document.getElementById("openLetter").addEventListener("click", function() {
+            document.getElementById("messageBox").style.display = "block";
+            document.getElementById("openLetter").style.display = "none";
+        });
     </script>
 
 </body>
