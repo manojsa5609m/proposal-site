@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="or">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ମୋର ଜୀବନର ଅନ୍ୟତମ ସୁନ୍ଦର ମୁହୂର୍ତ୍ତ ❤️</title>
+    <title>A Special Message for You ❤️</title>
     <style>
         body {
             text-align: center;
             font-family: 'Arial', sans-serif;
-            background-color: #ffcccb;
+            background-color: #f0f8ff;
             color: #333;
             margin: 0;
             padding: 50px;
@@ -21,39 +21,30 @@
             display: inline-block;
         }
         h1 {
-            color: #ff4d6d;
+            color: #ff6f61;
         }
-        .btn {
-            padding: 10px 20px;
+        .message {
             font-size: 18px;
-            color: white;
-            background: #ff4d6d;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 15px;
-        }
-        .btn:hover {
-            background: #e63950;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 3s ease-in-out;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>ମୋର ହୃଦୟର ଏକମାତ୍ର ରାଣୀ ପାଇଁ 👑❤️</h1>
-        <p>ତୁମକୁ ଦେଖିଲି, ଏବଂ ସେହି ଦିନରୁ ମୋ ମନ ଏକ ଅଜଣା ଅନୁଭୂତିରେ ବନ୍ଧିଗଲା।  
-        **ତୁମର ହସ ମୋର ପାଇଁ ଏକ ସପନର ଦୁନିଆ** ତିଆରି କରେ। 😍</p>
-        <p>ମୁଁ ଏତିକି କହିବାକୁ ଚାହେଁ—  
-        **"ତୁମେ ମୋ ସହିତ ଏହି ଜୀବନଟା ଅପେକ୍ଷାକୃତ ଅଧିକ ସୁନ୍ଦର କରିବାକୁ ଚାହୁଁ କି?"** 💞</p>
-        <button class="btn" onclick="showAnswer()">ହଁ, ମୁଁ ମନୋଇଛି! 💖</button>
+        <h1>Dear [Sweety didi], 🚍💖</h1>
+        <p>Hold on... a special message is arriving! ⏳</p>
+        <p class="message" id="specialMsg">[Sweety didi], you are not just my sister;  
+        you are my mentor, my inspiration, and my best friend.  
+        Thank you for being the guiding light in my life. ❤️</p>
     </div>
 
     <script>
-        function showAnswer() {
-            alert("Yay! 🎉 ଏବେ ଆମ ପ୍ରେମ କାହାଣୀ ଆରମ୍ଭ ହେଲା... ମୋତେ ଛାଡିକି କେବେ ଯିବନି ହେଲା |I love you Bhumika💖");
-            window.location.href = "https://your-instagram-profile-link"; // Change to your Insta/GitHub/Profile
-        }
+        setTimeout(function() {
+            document.getElementById("specialMsg").style.opacity = "1";
+        }, 3000); // Message appears after 3 seconds
     </script>
 
 </body>
