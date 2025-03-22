@@ -22,46 +22,43 @@
             display: inline-block;
             position: relative;
             z-index: 2;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
         }
         h1 {
             color: #ff6f61;
         }
-        .message {
-            font-size: 18px;
-            margin-top: 20px;
-            opacity: 0;
-            transition: opacity 2s ease-in-out;
-        }
+
+        /* Animated Bus */
         .bus {
             position: absolute;
             top: 50%;
-            left: -200px;
-            width: 150px;
-            animation: moveBus 3s linear forwards;
-            z-index: 1;
+            left: -100px;
+            font-size: 50px;
+            animation: moveBus 4s linear forwards;
         }
+
         @keyframes moveBus {
-            0% { left: -200px; }
-            100% { left: 50%; transform: translateX(-50%); }
+            0% { left: -100px; }
+            100% { left: 100%; }
         }
     </style>
 </head>
 <body>
 
-    <img src="https://i.imgur.com/ApBnD2W.png" alt="Bus" class="bus"> <!-- Bus Image -->
-    
-    <div class="container">
+    <div class="bus">🚌💨</div> <!-- Moving Bus -->
+
+    <div class="container" id="messageBox">
         <h1>Dear Sister ❤️</h1>
-        <p>Hold on... a bus is arriving! 🚌💨</p>
-        <p class="message" id="specialMsg">You are not just my sister;  
+        <p>You are not just my sister;  
         you are my best friend, my biggest support, and my guiding light.  
         Thank you for always being there for me. Love you! ❤️</p>
     </div>
 
     <script>
         setTimeout(function() {
-            document.getElementById("specialMsg").style.opacity = "1";
-        }, 3500); // Message appears after bus arrives
+            document.getElementById("messageBox").style.opacity = "1";
+        }, 4000); // Message appears after bus exits the screen
     </script>
 
 </body>
