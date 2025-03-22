@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Special Message for You ❤️</title>
+    <title>Special Message for You ❤️</title>
     <style>
         body {
             text-align: center;
@@ -12,6 +12,7 @@
             color: #333;
             margin: 0;
             padding: 50px;
+            overflow: hidden;
         }
         .container {
             background: white;
@@ -19,6 +20,8 @@
             border-radius: 10px;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
             display: inline-block;
+            position: relative;
+            z-index: 2;
         }
         h1 {
             color: #ff6f61;
@@ -27,24 +30,38 @@
             font-size: 18px;
             margin-top: 20px;
             opacity: 0;
-            transition: opacity 3s ease-in-out;
+            transition: opacity 2s ease-in-out;
+        }
+        .bus {
+            position: absolute;
+            top: 50%;
+            left: -200px;
+            width: 150px;
+            animation: moveBus 3s linear forwards;
+            z-index: 1;
+        }
+        @keyframes moveBus {
+            0% { left: -200px; }
+            100% { left: 50%; transform: translateX(-50%); }
         }
     </style>
 </head>
 <body>
 
+    <img src="https://i.imgur.com/ApBnD2W.png" alt="Bus" class="bus"> <!-- Bus Image -->
+    
     <div class="container">
-        <h1>Dear [Sweety didi], 🚍💖</h1>
-        <p>Hold on... a special message is arriving! ⏳</p>
-        <p class="message" id="specialMsg">[Sweety didi], you are not just my sister;  
-        you are my mentor, my inspiration, and my best friend.  
-        Thank you for being the guiding light in my life. ❤️</p>
+        <h1>Dear Sister ❤️</h1>
+        <p>Hold on... a bus is arriving! 🚌💨</p>
+        <p class="message" id="specialMsg">You are not just my sister;  
+        you are my best friend, my biggest support, and my guiding light.  
+        Thank you for always being there for me. Love you! ❤️</p>
     </div>
 
     <script>
         setTimeout(function() {
             document.getElementById("specialMsg").style.opacity = "1";
-        }, 3000); // Message appears after 3 seconds
+        }, 3500); // Message appears after bus arrives
     </script>
 
 </body>
